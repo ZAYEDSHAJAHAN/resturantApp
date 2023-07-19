@@ -36,7 +36,7 @@ String? selectedValue;
 class _ResturantdetailsState extends State<Resturantdetails> {
   void _openMaps() async {
     final url =
-        'https://www.google.com/maps/search/?api=1&query=${widget.latlng.lat}},${widget.latlng.lng}';
+        'https://www.google.com/maps/search/?api=1&query=${widget.latlng.lat},${widget.latlng.lng}';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
